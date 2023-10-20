@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.nav {
+
+    &__item {
+        text-decoration: none;
+        color: #85AAAB;
+        font-weight: 700;
+        font-size: 18px;
+        transition: .2s;
+
+        &:not(&:last-child) {
+            margin-right: 15px;
+        }
+
+        &:not(.active_link):hover {
+            color: #617d7e;
+            transition: .2s;
+        }
+    }
+}

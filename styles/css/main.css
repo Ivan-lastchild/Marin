@@ -1,0 +1,125 @@
+body {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url(../../fonts/Oswald/Oswald-Bold.woff);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Light.woff);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Bold.woff);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Medium.woff);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Black.woff);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../fonts/Montserrat/Montserrat-Regular.woff);
+  font-weight: 400;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  flex-grow: 1;
+}
+
+.nav__item {
+  text-decoration: none;
+  color: #85AAAB;
+  font-weight: 700;
+  font-size: 18px;
+  transition: 0.2s;
+}
+.nav__item:not(.nav__item:last-child) {
+  margin-right: 15px;
+}
+.nav__item:not(.active_link):hover {
+  color: #617d7e;
+  transition: 0.2s;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald";
+}
+
+.center {
+  padding-left: calc(50vw - 585px);
+  padding-right: calc(50vw - 585px);
+}
+
+.active_link {
+  border-bottom: 2px solid #6DE1E3;
+  color: #6DE1E3;
+}/*# sourceMappingURL=main.css.map */

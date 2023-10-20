@@ -1,0 +1,17 @@
+body {
+    font-family: "Montserrat";
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Oswald";
+}
+
+.center {
+    padding-left: calc(50vw - 585px);
+    padding-right: calc(50vw - 585px);
+}
+
+.active_link {
+    border-bottom: 2px solid #6DE1E3;
+    color: #6DE1E3;
+}
