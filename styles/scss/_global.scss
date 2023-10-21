@@ -14,4 +14,23 @@ h1, h2, h3, h4, h5, h6 {
 .active_link {
     border-bottom: 2px solid #6DE1E3;
     color: #6DE1E3;
+
+    &:hover {
+        color: #50a6a8;
+        border-bottom: 2px solid #50a6a8;
+        transition: .2s;
+    }
+}
+
+.funkBtn {
+    background-color: #2D5E5E;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+    width: 250px;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
 }

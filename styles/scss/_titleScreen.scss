@@ -1,0 +1,34 @@
+.titleScreen {
+    background-image: url("../../img/title_page_bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 161px;
+    padding-top: 250px;
+
+    &__title{
+        color: #fff;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: 700;
+        margin-bottom: 55px;
+    }
+
+    &__descrip {
+        font-size: 24px;
+        line-height: 1.5;
+        max-width: 300px;
+        color: #fff;
+        margin-bottom: 55px;
+    }
+
+    &__btn {
+        text-transform: uppercase;
+        transition: .2s;
+        
+        &:hover {
+            background-color: #397979;
+            transition: .2s;
+        }
+    }
+}
