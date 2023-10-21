@@ -143,9 +143,6 @@ table {
 .titleScreen__btn:active {
   background-color: #4b9f9f;
 }
-.titleScreen__btn:focus {
-  background-color: #119c9c;
-}
 
 .services {
   display: flex;
