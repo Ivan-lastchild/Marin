@@ -5,7 +5,8 @@
     padding-top: 30px;
     padding-bottom: 30px;
     position: absolute;
-    width: 100%;
+    left: 0;
+    right: 0;
 }
 
 .nav {
@@ -21,10 +22,13 @@
             margin-right: 15px;
         }
 
-        &:not(.active_link):hover,
-        &:not(.active_link):active {
+        &:not(.active_link):hover {
             color: #617d7e;
             transition: .2s;
+        }
+
+        &:not(.active_link):active {
+            color: #7fa5a7;
         }
     }
 }

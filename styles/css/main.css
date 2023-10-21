@@ -87,7 +87,8 @@ table {
   padding-top: 30px;
   padding-bottom: 30px;
   position: absolute;
-  width: 100%;
+  left: 0;
+  right: 0;
 }
 
 .nav__item {
@@ -100,9 +101,12 @@ table {
 .nav__item:not(.nav__item:last-child) {
   margin-right: 15px;
 }
-.nav__item:not(.active_link):hover, .nav__item:not(.active_link):active {
+.nav__item:not(.active_link):hover {
   color: #617d7e;
   transition: 0.2s;
+}
+.nav__item:not(.active_link):active {
+  color: #7fa5a7;
 }
 
 .titleScreen {
@@ -134,6 +138,12 @@ table {
 .titleScreen__btn:hover {
   background-color: #397979;
   transition: 0.2s;
+}
+.titleScreen__btn:active {
+  background-color: #4b9f9f;
+}
+.titleScreen__btn:focus {
+  background-color: #119c9c;
 }
 
 body {
