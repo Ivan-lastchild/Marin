@@ -1,0 +1,58 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(/img/about_bg.png);
+
+    &__textBlock {
+        max-width: 625px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 1.5;
+        margin-bottom: 50px;
+        color: #fff;
+    }
+
+    &__descrp {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 35px;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &__btnAsk {
+        background-color: transparent;
+        border: 3px solid #2D5E5E;
+        margin-right: 30px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        &:active {
+            background-color: rgba(199, 199, 199, 0.2);
+        }
+    }
+
+    &__btnConsultation {
+        background-color: #2D5E5E;
+        border: none;
+
+        &:hover {
+            background-color: #448f8f;
+        }
+
+        &:active {
+            background-color: #58b9b9;
+        }
+    }
+
+    &__img {
+        max-width: 495px;
+    }
+}

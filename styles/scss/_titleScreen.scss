@@ -23,12 +23,13 @@
     }
 
     &__btn {
+        border: none;
+        background-color: #2D5E5E;
         text-transform: uppercase;
         transition: .2s;
         
         &:hover {
             background-color: #397979;
-            transition: .2s;
         }
 
         &:active {

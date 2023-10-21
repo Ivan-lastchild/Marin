@@ -132,12 +132,13 @@ table {
   margin-bottom: 55px;
 }
 .titleScreen__btn {
+  border: none;
+  background-color: #2D5E5E;
   text-transform: uppercase;
   transition: 0.2s;
 }
 .titleScreen__btn:hover {
   background-color: #397979;
-  transition: 0.2s;
 }
 .titleScreen__btn:active {
   background-color: #4b9f9f;
@@ -173,6 +174,55 @@ table {
   font-weight: 500;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(/img/about_bg.png);
+}
+.about__textBlock {
+  max-width: 625px;
+}
+.about__title {
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.about__descrp {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 35px;
+  color: #fff;
+  font-weight: 700;
+}
+.about__btnAsk {
+  background-color: transparent;
+  border: 3px solid #2D5E5E;
+  margin-right: 30px;
+}
+.about__btnAsk:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.about__btnAsk:active {
+  background-color: rgba(199, 199, 199, 0.2);
+}
+.about__btnConsultation {
+  background-color: #2D5E5E;
+  border: none;
+}
+.about__btnConsultation:hover {
+  background-color: #448f8f;
+}
+.about__btnConsultation:active {
+  background-color: #58b9b9;
+}
+.about__img {
+  max-width: 495px;
+}
+
 body {
   font-family: "Montserrat";
 }
@@ -197,14 +247,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .funkBtn {
-  background-color: #2D5E5E;
   color: #fff;
+  font-family: "Montserrat";
   font-size: 18px;
   line-height: 1.3;
   width: 250px;
   padding: 8px 0;
   text-align: center;
   border-radius: 10px;
-  border: none;
   cursor: pointer;
+  transition: 0.2s;
+}
+.funkBtn:hover {
+  transition: 0.2s;
 }/*# sourceMappingURL=main.css.map */
