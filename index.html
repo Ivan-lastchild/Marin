@@ -26,7 +26,7 @@
             <p class="titleScreen__descrip">
                 Личные, семейные и групповые консультаци
             </p>
-            <button href="#" class="funkBtn titleScreen__btn">
+            <button href="#" class="func-btn titleScreen__btn">
                 Узнать больше
             </button>
         </section>
@@ -86,25 +86,32 @@
                     Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо.
                 </p>
                 <div class="about__btnBlock">
-                    <button class="funkBtn about__btnAsk">Задать вопрос</button>
-                    <button class="funkBtn about__btnConsultation">Хочу консультацию</button>
+                    <button class="func-btn about__btnAsk">Задать вопрос</button>
+                    <button class="func-btn about__btnConsultation">Хочу консультацию</button>
                 </div>
             </div>
             <div class="about__img">
                 <img src="/img/about_photo.png" alt="Марин Валентин">
             </div>
         </section>
-        <section class="forms center">
-            <h3 class="forms__title">Записаться на прием</h3>
-            <input class="forms__name" type="text" placeholder="Ваше имя">
-            <input class="forms__tel" type="tel" placeholder="Ваш телефон">
-            <div class="forms-5">4</div>
-            <textarea class="forms__textarea">Пожелания</textarea>
-            <label class="forms__agreement">
-                <input type="checkbox"></input>
-                Я согласен с политикой конфиденциальности
-            </label>
-            <button class="funkBtn forms__btn">Отправить</button>
+        <section class="center">
+            <form action="" class="forms">
+                <h3 class="forms__title">Записаться на прием</h3>
+                <input class="forms__name" type="text" placeholder="Ваше имя *">
+                <input class="forms__tel" type="tel" placeholder="Ваш телефон *">
+                <select class="forms__topic">
+                    <option disabled selected>Тема встречи *</option>
+                    <option value="Troubles with parents">Влияние родительского стиля воспитания на развитие личности ребенка</option>
+                    <option value="Behavior">Психология масс и поведение индивида в группе</option>
+                    <option value="Sociology teenagers">Социализация подростков в современном мире</option>
+                </select>
+                <textarea class="forms__wishes" placeholder="Пожелания"></textarea>
+                <label class="forms__agreement">
+                    <input type="checkbox" class="custom-checkbox">
+                    Я согласен с политикой конфиденциальности
+                </label>
+                <button class="func-btn forms__btn">Отправить</button>
+            </form>
         </section>
     </main>
     <footer class="footer">
