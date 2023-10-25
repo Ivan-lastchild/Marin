@@ -177,7 +177,7 @@ table {
   justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url(/img/about_bg.png);
+  background-image: url(../../img/about_bg.png);
 }
 .about__textBlock {
   max-width: 625px;
