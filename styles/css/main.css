@@ -259,9 +259,6 @@ table {
   height: 30px;
   align-self: center;
 }
-.forms__agreement .custom-checkbox:checked {
-  background-color: #397979;
-}
 .forms__btn {
   background-color: #2D5E5E;
   border: none;
