@@ -1,0 +1,36 @@
+.counter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../../img/counter_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &__item {
+        text-align: center;
+        max-width: 300px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 1.5;
+        margin-bottom: 14px;
+    }
+
+    &__subtitle {
+        font-size: 24px;
+        line-height: 1.3;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 500;
+    }
+}
