@@ -467,6 +467,11 @@ table {
   background-size: cover;
   color: #fff;
 }
+@media screen and (max-width: 768px) {
+  .news {
+    padding-top: 30px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .news {
     display: flex;
@@ -580,6 +585,68 @@ table {
   .news__text {
     font-size: 16px;
   }
+}
+
+.questions {
+  padding-top: 51px;
+  padding-bottom: 60px;
+}
+@media screen and (max-width: 768px) {
+  .questions {
+    padding: 20px 0;
+  }
+}
+.questions__title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 78px;
+}
+@media screen and (max-width: 768px) {
+  .questions__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+}
+.questions__item {
+  max-width: 900px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 768px) {
+  .questions__item {
+    max-width: 600px;
+    margin-right: 15px;
+  }
+}
+.questions__item summary {
+  margin-bottom: 20px;
+  font-family: "Oswald";
+  font-size: 24px;
+  line-height: 1.3;
+  font-weight: 700;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+.questions__item summary::marker {
+  content: url(../../img/Vector-plus.svg);
+}
+.questions__item[open] summary {
+  color: #2D5E5E;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+.questions__item[open] summary::marker {
+  content: url(../../img/Vector-plus-45deg.svg);
+}
+.questions__item > p {
+  margin-left: 17px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.questions__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 body {

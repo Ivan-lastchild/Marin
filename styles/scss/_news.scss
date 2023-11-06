@@ -5,6 +5,10 @@
     background-size: cover;
     color: #fff;
 
+    @media screen and (max-width: 768px) {
+        padding-top: 30px;
+    }
+
     
     @media screen and (max-width: 1200px) {
         display: flex;
