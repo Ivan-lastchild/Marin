@@ -246,9 +246,13 @@ table {
   position: relative;
 }
 .forms__topic::after {
-  content: url("../../img/sort-down.png");
-  position: absolute;
-  right: 20px;
+  content: "";
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 0;
+  background-color: #000;
 }
 .forms__name, .forms__tel, .forms__topic, .forms__wishes {
   font-size: 18px;

@@ -22,11 +22,16 @@
 
     &__topic {
         appearance: none;
-        position: relative;
+        position: relative; 
+
         &::after {
-            content: url("../../img/sort-down.png");
-            position: absolute;
-            right: 20px;
+            content: "";
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            top: 100px;
+            left: 0;
+            background-color: #000;
         }
     }
 
