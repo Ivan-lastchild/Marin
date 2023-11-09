@@ -1,0 +1,48 @@
+.maps {
+    position: relative;
+
+    iframe {
+        width: 100%;
+    }
+
+    &__contacts {
+        position: absolute;
+        top: 128px;
+        left: 828px;
+        padding: 30px;
+        background-color: #ADDDDE;
+
+        @media screen and (max-width: 1300px) {
+            left: auto;
+            right: 20px;
+        }
+
+        &-title {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: #2D5E5E;
+            margin-bottom: 20px;
+
+            @media screen and (max-width: 768px) {
+                font-size: 36px;
+            }
+        }
+
+        &-item {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #000;
+
+            @media screen and (max-width: 768px) {
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            & li:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

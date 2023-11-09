@@ -692,6 +692,53 @@ table {
   margin-bottom: 20px;
 }
 
+.maps {
+  position: relative;
+}
+.maps iframe {
+  width: 100%;
+}
+.maps__contacts {
+  position: absolute;
+  top: 128px;
+  left: 828px;
+  padding: 30px;
+  background-color: #ADDDDE;
+}
+@media screen and (max-width: 1300px) {
+  .maps__contacts {
+    left: auto;
+    right: 20px;
+  }
+}
+.maps__contacts-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #2D5E5E;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .maps__contacts-title {
+    font-size: 36px;
+  }
+}
+.maps__contacts-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .maps__contacts-item {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+.maps__contacts-item li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .appointment {
   padding-top: 60px;
   padding-bottom: 60px;
