@@ -20,6 +20,16 @@
         border-radius: 10px;
     }
 
+    &__topic {
+        appearance: none;
+        position: relative;
+        &::after {
+            content: url("../../img/sort-down.png");
+            position: absolute;
+            right: 20px;
+        }
+    }
+
     &__name,
     &__tel,
     &__topic,
@@ -28,6 +38,7 @@
         line-height: 1.3;
         padding: 8px 20px;
         margin-bottom: 30px;
+        border: 1px solid #000;
     }
 
     &__title {
@@ -48,11 +59,40 @@
         margin-bottom: 40px;
         height: 30px;
         align-self: center;
+        input {
+            appearance: none;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -30px;
+                top: -11px;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #2D5E5E;
+            }
+
+            &:checked {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: #2D5E5E;
+                    left: -30px;
+                    top: -11px;
+                    width: 14px;
+                    height: 14px;
+                    border: 1px solid #fff;
+                    outline: 1px solid #2D5E5E;
+                } 
+            }
+        }
     }
 
     &__btn{
         background-color: #2D5E5E;
         border: none;
+        width: 250px;
 
         &:hover {
             background-color: #397979;

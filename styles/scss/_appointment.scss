@@ -1,0 +1,74 @@
+.appointment {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &__title {
+        text-align: center;
+        font-size: 48px;
+        line-height: 1.5;
+        font-weight: 700;
+        margin-bottom: 60px;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 370px));
+        grid-template-rows: repeat(2, auto);
+        padding-bottom: 60px;
+        justify-content: center;
+        grid-column-gap: 30px;
+    }
+
+    &__name,
+    &__tell {
+        border-radius: 10px;
+        border: 1px solid #000;
+        padding: 8px 20px;
+    }
+
+    &__btn{
+        background-color: #2D5E5E;
+        border: none;
+        width: 100%;
+    }
+
+    &__agree {
+        grid-column: 1/4;
+        text-align: center;
+        margin-top: 25px;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 2.5;
+        color: #2D5E5E;
+        
+        input {
+            appearance: none;
+            position: relative;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: -30px;
+                top: -11px;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #2D5E5E;
+            }
+
+            &:checked {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background-color: #2D5E5E;
+                    left: -30px;
+                    top: -11px;
+                    width: 14px;
+                    height: 14px;
+                    border: 1px solid #fff;
+                    outline: 1px solid #2D5E5E;
+                } 
+            }
+        }
+
+    }
+}

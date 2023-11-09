@@ -36,6 +36,7 @@
             font-weight: 700;
             list-style-position: outside;
             padding-left: 20px;
+            cursor: pointer;
             &::marker {
                 content: url(../../img/Vector-plus.svg);
             }
