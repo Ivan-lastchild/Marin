@@ -5,30 +5,56 @@
     align-items: center;
     background-color: #2D5E5E;
 
+    @media screen and (max-width: 768px) {
+        justify-content: space-around;
+    }
+
     &__logo {
         margin-right: 50px;
+
+        & img {
+            @media screen and (max-width: 768px) {
+                width: 150px;
+            }
+        }
     }
 
-    a:not(:first-child){
-        margin-right: 30px;
-    }
-
-    a {
-        text-decoration: none;
-        color: #fff;
+    &__nav {
         display: flex;
         align-items: center;
-        font-weight: 500;
-        line-height: 1.71;
-        transition: .2s;
-        
-        & > span {
-            margin-left: 10px;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
         }
 
-        &:hover {
-            color: #7ea3a4;
+        & li{
+            margin-right: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            line-height: 1.71;
             transition: .2s;
+            
+            & > span {
+                margin-left: 10px;
+            }
+    
+            &:hover {
+                color: #7ea3a4;
+                transition: .2s;
+            }
         }
     }
+
+    
+
+    
+
+    
 }
