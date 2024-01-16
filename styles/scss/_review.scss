@@ -2,6 +2,10 @@
     padding-top: 60px;
     padding-bottom: 70px;
     text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     @media screen and (max-width: 768px) {
         padding: 30px 0;
@@ -10,8 +14,33 @@
     @media screen and (max-width: 375px) {
         padding: 10px;
     }
-    
 
+    .slide_left{
+        position: absolute;
+        height: 30px;
+        left: calc(25% - 200px);
+        top: calc(50% + 25px);
+        rotate: -180deg;
+        cursor: pointer;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .slide_right{
+        position: absolute;
+        height: 30px;
+        right: calc(25% - 200px);
+        top: calc(50% + 25px);
+        cursor: pointer;
+        z-index: 10;
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+    
     &__title {
         font-size: 48px;
         font-weight: 700;
@@ -25,11 +54,10 @@
     }
 
     &__block {
-        display: inline-block;
+        display: flex;
+        justify-content: flex-start;
         max-width: 600px;
-        background: #ADDDDE;
-        padding: 20px 25px;
-        position: relative;
+        overflow: hidden;
 
         @media screen and (max-width: 768px) {
             max-width: 500px;
@@ -39,32 +67,14 @@
             max-width: 350px;
         }
 
-
-        &:before{
-            content: url('../../img/Vector.svg');
-            position: absolute;
-            height: 30px;
-            right: -43px;
-            top: calc(50% - 15px);
-            cursor: pointer;
-
-            @media screen and (max-width: 768px) {
-                content: none;
-            }
-        }
-
-        &:after{
-            content: url('../../img/Vector.svg');
-            position: absolute;
-            height: 30px;
-            left: -43px;
-            top: calc(50% - 15px);
-            rotate: -180deg;
-            cursor: pointer;
-
-            @media screen and (max-width: 768px) {
-                content: none;
-            }
+        &-item {
+            display: inline-block;
+            flex-shrink: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            background: #ADDDDE;
+            padding: 20px 25px;
+            transition: .5s;
         }
     }
 
