@@ -6,10 +6,6 @@ let arrOfSlides = Array.from(slides);
 
 let currSlide = 0;
 
-slideLeft.addEventListener("click", (e)=>{
-    console.log(e.pageX)
-})
-
 slideLeft.addEventListener('click', doSlideLeft);
 slideRight.addEventListener('click', doSlideRight);
 setInterval(doSlideRight, 8000);
